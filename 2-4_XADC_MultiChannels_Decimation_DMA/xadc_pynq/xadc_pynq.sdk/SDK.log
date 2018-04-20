@@ -5,3 +5,10 @@
 18:25:32 INFO  : Successfully done setting SDK workspace  
 18:25:32 INFO  : Processing command line option -hwspec /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf.
 18:27:08 INFO  : Refreshed build settings on project XADC_MultiChannels_Decimation
+19:16:55 INFO  : Registering command handlers for SDK TCF services
+19:16:55 INFO  : Launching XSCT server: xsct -n -interactive /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/temp_xsdb_launch_script.tcl
+19:16:58 INFO  : XSCT server has started successfully.
+19:16:58 INFO  : Successfully done setting XSCT server connection channel  
+19:16:59 INFO  : Successfully done setting SDK workspace  
+19:16:59 INFO  : Processing command line option -hwspec /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf.
+19:18:55 INFO  : Refreshed build settings on project XBPrj_Version
