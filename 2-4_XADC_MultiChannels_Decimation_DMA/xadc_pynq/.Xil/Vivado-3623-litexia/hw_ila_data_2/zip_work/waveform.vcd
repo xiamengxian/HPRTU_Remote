@@ -1,0 +1,19 @@
+$date
+        2018-Feb-28 14:48:20
+$end
+$version
+        Vivado v2016.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " design_1_i/fir_compiler_1_M_AXIS_DATA_TDATA [15:0] $end
+$var reg 16 2 design_1_i/axis_data_fifo_0_M_AXIS1_TDATA [15:0] $end
+$var reg 1 B design_1_i/fir_compiler_1_M_AXIS_DATA_TVALID $end
+$var reg 1 C design_1_i/axis_data_fifo_0_M_AXIS1_TVALID $end
+$var reg 1 D _TRIGGER $end
+$var reg 1 E _WINDOW $end
+$var reg 1 F _GAP $end
+$upscope $end
+$enddefinitions $end

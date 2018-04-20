@@ -1,0 +1,19 @@
+$date
+        2018-Feb-28 13:46:42
+$end
+$version
+        Vivado v2016.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " design_1_i/system_ila1/inst/net_slot_1_axis_tdata [15:0] $end
+$var reg 16 2 design_1_i/system_ila1/inst/net_slot_0_axis_tdata [15:0] $end
+$var reg 1 B u_ila_0_net_slot_1_axis_tlast_1 $end
+$var reg 1 C u_ila_0_net_slot_1_axis_tlast $end
+$var reg 1 D _TRIGGER $end
+$var reg 1 E _WINDOW $end
+$var reg 1 F _GAP $end
+$upscope $end
+$enddefinitions $end

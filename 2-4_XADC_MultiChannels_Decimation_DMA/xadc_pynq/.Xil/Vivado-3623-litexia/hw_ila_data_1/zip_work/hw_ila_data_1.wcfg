@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="455"></NameColumnWidth>
+      <ValueColumnWidth column_width="440"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="group" fp_name="group3">
+      <obj_property name="label">slot_0 : axis_data_fifo_1_M_AXIS : Stream Channel Signal Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tdata">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tdata[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tlast">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tready">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tvalid">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group10">
+      <obj_property name="label">slot_1 : fir_compiler_1_M_AXIS_DATA : Stream Channel Signal Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="design_1_i/system_ila/inst/net_slot_1_axis_tdata">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_1_axis_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">net_slot_1_axis_tdata[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_1_axis_tlast">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_1_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_1_axis_tready">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_1_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">net_slot_1_axis_tready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_1_axis_tvalid">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_1_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group221">
+      <obj_property name="label">slot_4 : XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V : Stream Channel Signal Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Stream_Channel_(i1:s5)_(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V)">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Stream_Channel_(i1:s5)_(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Stream_Channel_(i1:s5)_(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V)[2:0]</obj_property>
+      <obj_property name="label">slot_5 : XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V : Stream Channel  Events</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group228">
+      <obj_property name="label">slot_5 : XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V : Stream Channel Signal Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tvalid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider85" type="divider">
+      <obj_property name="label">slot_0 : fir_compiler_0_M_AXIS_DATA : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">khaki</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group87">
+      <obj_property name="label">slot_0 : fir_compiler_0_M_AXIS_DATA : Stream Channel Signal Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tdata">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tdata[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tlast">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tready">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="design_1_i/system_ila/inst/net_slot_0_axis_tvalid">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila/inst/net_slot_0_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider92" type="divider">
+      <obj_property name="label">slot_1 : XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">khaki</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="Stream_Channel_(i1:s1)_(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V)">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Stream_Channel_(i1:s1)_(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Stream_Channel_(i1:s1)_(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V)[2:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">green</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">slot_1 : XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V : Stream Channel  Events</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

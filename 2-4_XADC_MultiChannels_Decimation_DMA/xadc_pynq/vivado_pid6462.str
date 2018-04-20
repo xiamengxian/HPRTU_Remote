@@ -1,0 +1,132 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+Process ID: 6462
+
+Current time: 	1/29/18 9:48:45 AM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 4.13.0-26-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/media/lite/DATA/A_Software/Xilinx/Vivado/2016.3/tps/lnx64/jre
+
+User name: 	lite
+User home directory: /home/lite
+User working directory: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /media/lite/DATA/A_Software/Xilinx/Vivado
+RDI data directory: /media/lite/DATA/A_Software/Xilinx/Vivado/2016.3/data
+RDI bin directory: /media/lite/DATA/A_Software/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: /home/lite/.Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: /home/lite/.Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	153 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 778 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 30 MB (+29351kb) [00:00:09]
+// [Engine Memory]: 770 MB (+655944kb) [00:00:09]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 791 MB. GUI used memory: 23 MB. Current time: 1/29/18 9:48:48 AM CST
+setFileChooser("/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr");
+// Opening Vivado Project: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr 
+// [Engine Memory]: 836 MB (+28935kb) [00:00:15]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [GUI Memory]: 32 MB (+424kb) [00:00:30]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 937 MB. GUI used memory: 23 MB. Current time: 1/29/18 9:49:07 AM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 38 MB (+3763kb) [00:00:37]
+// [Engine Memory]: 993 MB (+120205kb) [00:00:37]
+// [GUI Memory]: 47 MB (+8040kb) [00:00:38]
+// [GUI Memory]: 53 MB (+4104kb) [00:00:39]
+// Tcl Message: open_project /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/Lite_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/lite/DATA/A_Software/Xilinx/Vivado/2016.3/data/ip'. 
+// Project name: xadc_pynq; location: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq; part: xc7z020clg400-1
+// 'i' command handler elapsed time: 27 seconds
+// [Engine Memory]: 1,046 MB (+4244kb) [00:00:40]
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 6065.633 ; gain = 193.160 ; free physical = 3858 ; free virtual = 13921 
+// Elapsed time: 26 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+// [GUI Memory]: 57 MB (+743kb) [00:00:43]
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 60 MB (+182kb) [00:02:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,063 MB. GUI used memory: 38 MB. Current time: 1/29/18 9:52:53 AM CST
+// [GUI Memory]: 64 MB (+732kb) [00:26:27]
+// [GUI Memory]: 67 MB (+331kb) [00:33:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,064 MB. GUI used memory: 38 MB. Current time: 1/29/18 10:22:52 AM CST
+// [GUI Memory]: 70 MB (+6kb) [00:42:32]
+// [GUI Memory]: 74 MB (+178kb) [00:47:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,064 MB. GUI used memory: 37 MB. Current time: 1/29/18 10:52:53 AM CST
+// [GUI Memory]: 79 MB (+733kb) [01:14:57]
+// [GUI Memory]: 83 MB (+840kb) [01:26:47]
+// Elapsed time: 5219 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,066 MB. GUI used memory: 37 MB. Current time: 1/29/18 11:22:53 AM CST
+// [GUI Memory]: 88 MB (+742kb) [01:52:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,067 MB. GUI used memory: 38 MB. Current time: 1/29/18 11:52:53 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,067 MB. GUI used memory: 38 MB. Current time: 1/29/18 12:22:53 PM CST
+// [GUI Memory]: 93 MB (+273kb) [02:44:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,067 MB. GUI used memory: 37 MB. Current time: 1/29/18 1:32:42 PM CST

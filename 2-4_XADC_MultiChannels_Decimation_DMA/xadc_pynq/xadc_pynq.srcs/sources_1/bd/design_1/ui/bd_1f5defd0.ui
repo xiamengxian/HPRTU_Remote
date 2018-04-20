@@ -1,0 +1,88 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port uart_rtl -pg 1 -y 770 -defaultsOSRD
+preplace port DDR -pg 1 -y 910 -defaultsOSRD
+preplace port Vp_Vn -pg 1 -y 1190 -defaultsOSRD
+preplace port Vaux1 -pg 1 -y 1210 -defaultsOSRD
+preplace port UART_1 -pg 1 -y 950 -defaultsOSRD
+preplace port Vaux5 -pg 1 -y 1230 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 930 -defaultsOSRD
+preplace port Vaux13 -pg 1 -y 1290 -defaultsOSRD
+preplace port Vaux6 -pg 1 -y 1250 -defaultsOSRD
+preplace port Vaux15 -pg 1 -y 1310 -defaultsOSRD
+preplace port Vaux9 -pg 1 -y 1270 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 5 -y 660 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 6 -y 820 -defaultsOSRD
+preplace inst XADC_multiChannels_PreProcess_0 -pg 1 -lvl 4 -y 400 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 8 -y 1010 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 6 -y 650 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 8 -y 800 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -y 1270 -defaultsOSRD
+preplace inst XADC_SignalChannel_PreProcess_64_0 -pg 1 -lvl 7 -y 840 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst XADC_SignalChannel_PreProcess_64_1 -pg 1 -lvl 7 -y 670 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 9 -y 1040 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 4 -y 590 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 910 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 4 -y 670 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 10 -y 780 -defaultsOSRD
+preplace inst axi_mem_intercon1 -pg 1 -lvl 9 -y 730 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 9 -y 450 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 5 -y 840 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 920 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 10 -y 970 -defaultsOSRD
+preplace netloc Vaux6_1 1 0 3 NJ 1250 NJ 1250 NJ
+preplace netloc processing_system7_0_DDR 1 10 1 NJ
+preplace netloc xlconstant_5_dout 1 4 1 1400
+preplace netloc xlconstant_1_dout 1 4 1 1420
+preplace netloc axi_dma_1_M_AXI_S2MM 1 8 1 2790
+preplace netloc axi_dma_1_M_AXI_SG 1 8 1 2780
+preplace netloc xlconstant_2_dout 1 4 1 1410
+preplace netloc XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V 1 4 1 1430
+preplace netloc processing_system7_0_UART_1 1 10 1 NJ
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 8 N 950 NJ 950 NJ 950 NJ 950 NJ 950 2410J 910 NJ 910 3110J
+preplace netloc XADC_SignalChannel_PreProcess_64_1_M_AXIS 1 7 1 2420
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 680
+preplace netloc axi_uartlite_0_interrupt 1 8 3 2820 1110 NJ 1110 3580
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 10 380 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 2390J 900 NJ 900 3130J 850 3570
+preplace netloc Vp_Vn_1 1 0 3 NJ 1190 NJ 1190 NJ
+preplace netloc xadc_wiz_0_M_AXIS 1 3 1 980
+preplace netloc axi_dma_1_s2mm_introut 1 8 1 2780
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 11 20 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 3570
+preplace netloc fir_compiler_1_M_AXIS_DATA 1 6 1 N
+preplace netloc XADC_SignalChannel_PreProcess_64_0_M_AXIS 1 7 1 2380
+preplace netloc axi_dma_0_M_AXI_SG 1 8 1 2760
+preplace netloc axi_mem_intercon_M00_AXI 1 9 1 3140
+preplace netloc Vaux5_1 1 0 3 NJ 1230 NJ 1230 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 6 N 930 NJ 930 NJ 930 NJ 930 NJ 930 2370J
+preplace netloc axi_dma_0_s2mm_introut 1 8 1 2760
+preplace netloc xlconcat_0_dout 1 9 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 10 1 NJ
+preplace netloc axi_uartlite_0_UART 1 10 1 NJ
+preplace netloc Vaux13_1 1 0 3 NJ 1290 NJ 1290 NJ
+preplace netloc Vaux9_1 1 0 3 NJ 1270 NJ 1270 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 8 1 2770
+preplace netloc xlconstant_4_dout 1 4 1 1410
+preplace netloc axis_data_fifo_1_M_AXIS 1 5 1 1780
+preplace netloc axis_data_fifo_0_M_AXIS 1 5 1 N
+preplace netloc Vaux1_1 1 0 3 NJ 1210 NJ 1210 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 380
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 6 1 N
+preplace netloc Net2 1 0 11 10 1110 370 1110 690 1110 990 1110 1460 1110 1780 1110 2060 1110 2400 1110 2800 890 3120 710 3590
+preplace netloc XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V 1 4 1 1440
+preplace netloc Vaux15_1 1 0 3 NJ 1310 NJ 1310 NJ
+preplace netloc axi_mem_intercon1_M00_AXI 1 9 1 3100
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 6 670 960 NJ 960 NJ 960 NJ 960 NJ 960 NJ
+preplace netloc Net3 1 1 9 360 710 700 710 1000 1370 1450 1370 NJ 1370 2070 1370 2420 1370 2810 1370 3150J
+preplace netloc xlconstant_3_dout 1 4 1 1400
+levelinfo -pg 1 -10 190 530 850 1200 1620 1920 2220 2590 2960 3360 3610 -top 0 -bot 1420
+",
+}
+{
+   da_axi4_cnt: "5",
+   da_board_cnt: "4",
+   da_ps7_cnt: "2",
+}

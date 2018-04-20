@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="23051fs"></ZoomEndTime>
+      <Cursor1Time time="15000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="339"></NameColumnWidth>
+      <ValueColumnWidth column_width="191"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wave_markers>
+      <marker label="" time="512000" />
+      <marker label="" time="1023000" />
+      <marker label="" time="256000" />
+      <marker label="" time="375000" />
+      <marker label="" time="118000" />
+      <marker label="" time="768000" />
+      <marker label="" time="6000" />
+      <marker label="" time="12000" />
+      <marker label="" time="18000" />
+      <marker label="" time="0" />
+   </wave_markers>
+   <wvobject type="array" fp_name="design_1_i/axis_data_fifo_0_M_AXIS1_TDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axis_data_fifo_0_M_AXIS1_TDATA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_data_fifo_0_M_AXIS1_TDATA[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_i/fir_compiler_1_M_AXIS_DATA_TDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fir_compiler_1_M_AXIS_DATA_TDATA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fir_compiler_1_M_AXIS_DATA_TDATA[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_i/fir_compiler_1_M_AXIS_DATA_TVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fir_compiler_1_M_AXIS_DATA_TVALID</obj_property>
+      <obj_property name="ObjectShortName">fir_compiler_1_M_AXIS_DATA_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_i/axis_data_fifo_0_M_AXIS1_TVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axis_data_fifo_0_M_AXIS1_TVALID</obj_property>
+      <obj_property name="ObjectShortName">axis_data_fifo_0_M_AXIS1_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

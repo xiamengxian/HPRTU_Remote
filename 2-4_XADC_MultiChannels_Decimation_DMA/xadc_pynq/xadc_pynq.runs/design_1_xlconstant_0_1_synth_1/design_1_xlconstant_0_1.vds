@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Apr 18 21:56:16 2018
+# Process ID: 28233
+# Current directory: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_xlconstant_0_1_synth_1
+# Command line: vivado -log design_1_xlconstant_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xlconstant_0_1.tcl
+# Log file: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_xlconstant_0_1_synth_1/design_1_xlconstant_0_1.vds
+# Journal file: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_xlconstant_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_xlconstant_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1099.832 ; gain = 187.301 ; free physical = 815 ; free virtual = 9734
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (1#1) [/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_1' (2#1) [/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v:56]
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 1140.301 ; gain = 227.770 ; free physical = 685 ; free virtual = 9623
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1140.301 ; gain = 227.770 ; free physical = 688 ; free virtual = 9622
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1420.855 ; gain = 1.000 ; free physical = 179 ; free virtual = 9125
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1420.855 ; gain = 508.324 ; free physical = 136 ; free virtual = 9078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1420.855 ; gain = 508.324 ; free physical = 139 ; free virtual = 9070
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1420.855 ; gain = 508.324 ; free physical = 138 ; free virtual = 9069
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1420.855 ; gain = 508.324 ; free physical = 137 ; free virtual = 9069
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1420.855 ; gain = 508.324 ; free physical = 142 ; free virtual = 9032
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1431.840 ; gain = 519.309 ; free physical = 148 ; free virtual = 8855
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1431.840 ; gain = 519.309 ; free physical = 148 ; free virtual = 8855
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 139 ; free virtual = 8846
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 130 ; free virtual = 8845
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 130 ; free virtual = 8845
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 129 ; free virtual = 8846
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 129 ; free virtual = 8846
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 127 ; free virtual = 8846
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 127 ; free virtual = 8846
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1440.855 ; gain = 528.324 ; free physical = 127 ; free virtual = 8846
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1454.855 ; gain = 435.605 ; free physical = 133 ; free virtual = 8800
