@@ -474,7 +474,7 @@
           <spirit:configurableElementValue spirit:referenceId="Coefficient_Sets">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Filter_Type">Decimation</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Interpolation_Rate">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Decimation_Rate">50</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Decimation_Rate">5</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Zero_Pack_Factor">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Number_Channels">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RateSpecification">Frequency_Specification</spirit:configurableElementValue>
@@ -504,8 +504,8 @@
           <spirit:configurableElementValue spirit:referenceId="Zero_Pack_Factor">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Number_Channels">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RateSpecification">Frequency_Specification</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Sample_Frequency">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Clock_Frequency">100</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Sample_Frequency">0.5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Clock_Frequency">50</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Coefficient_Sign">Unsigned</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Quantization">Integer_Coefficients</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Coefficient_Width">16</spirit:configurableElementValue>
@@ -536,19 +536,29 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axis_data_fifo_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axis_data_fifo" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:instanceName>system_ila</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="system_ila" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axis_data_fifo_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="FIFO_DEPTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_system_ila_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_APC_EN">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_DATA_SEL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_TRIG_SEL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_MONITOR_SLOTS">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_INTF_TYPE">xilinx.com:interface:axis_rtl:1.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">INTERFACE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axis_data_fifo_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axis_data_fifo" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:instanceName>system_ila1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="system_ila" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axis_data_fifo_0_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="FIFO_DEPTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_system_ila1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_APC_EN">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_DATA_SEL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_AXI_TRIG_SEL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_MONITOR_SLOTS">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_SLOT_0_INTF_TYPE">xilinx.com:interface:axis_rtl:1.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">INTERFACE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -607,7 +617,16 @@
         <spirit:name>fir_compiler_0_M_AXIS_DATA</spirit:name>
         <spirit:activeInterface spirit:busRef="M_AXIS_DATA" spirit:componentRef="fir_compiler_0"/>
         <spirit:activeInterface spirit:busRef="S_AXIS_data_V" spirit:componentRef="XADC_SignalChannel_PreProcess_64_0"/>
+        <bd:hdl_attributes>
+          <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
+          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
+        </bd:hdl_attributes>
       </spirit:interconnection>
+      <spirit:monitorInterconnection>
+        <spirit:name>fir_compiler_0_M_AXIS_DATA</spirit:name>
+        <spirit:monitoredActiveInterface spirit:busRef="M_AXIS_DATA" spirit:componentRef="fir_compiler_0"/>
+        <spirit:monitorInterface spirit:busRef="SLOT_0_AXIS" spirit:componentRef="system_ila"/>
+      </spirit:monitorInterconnection>
       <spirit:interconnection>
         <spirit:name>axi_mem_intercon1_M00_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_mem_intercon1"/>
@@ -636,21 +655,20 @@
       <spirit:interconnection>
         <spirit:name>XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V</spirit:name>
         <spirit:activeInterface spirit:busRef="M_AXIS_VPVN_data_V" spirit:componentRef="XADC_multiChannels_PreProcess_0"/>
-        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_data_fifo_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>axis_data_fifo_0_M_AXIS</spirit:name>
-        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_data_fifo_0"/>
         <spirit:activeInterface spirit:busRef="S_AXIS_DATA" spirit:componentRef="fir_compiler_0"/>
+        <bd:hdl_attributes>
+          <bd:hdl_attribute bd:name="DEBUG" bd:value="true"/>
+          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
+        </bd:hdl_attributes>
       </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>axis_data_fifo_1_M_AXIS</spirit:name>
-        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_data_fifo_1"/>
-        <spirit:activeInterface spirit:busRef="S_AXIS_DATA" spirit:componentRef="fir_compiler_1"/>
-      </spirit:interconnection>
+      <spirit:monitorInterconnection>
+        <spirit:name>XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V</spirit:name>
+        <spirit:monitoredActiveInterface spirit:busRef="M_AXIS_VPVN_data_V" spirit:componentRef="XADC_multiChannels_PreProcess_0"/>
+        <spirit:monitorInterface spirit:busRef="SLOT_0_AXIS" spirit:componentRef="system_ila1"/>
+      </spirit:monitorInterconnection>
       <spirit:interconnection>
         <spirit:name>XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V</spirit:name>
-        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_data_fifo_1"/>
+        <spirit:activeInterface spirit:busRef="S_AXIS_DATA" spirit:componentRef="fir_compiler_1"/>
         <spirit:activeInterface spirit:busRef="M_AXIS_AD1_data_V" spirit:componentRef="XADC_multiChannels_PreProcess_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
@@ -740,8 +758,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="S00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_1" spirit:portRef="s_axis_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila1" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Net3</spirit:name>
@@ -766,8 +784,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon1" spirit:portRef="M00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_1" spirit:portRef="s_axis_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_uartlite_0_interrupt</spirit:name>

@@ -1,4 +1,6 @@
-Environment: 
-	Vivado2016.03
-Description:
+1 Environment: 
+	[1] Vivado2016.03
+	[2] python3.6
+2 Description:
+	[1] In order to implement Chinese display in Fig, you should extend font for matplotlib.
 	

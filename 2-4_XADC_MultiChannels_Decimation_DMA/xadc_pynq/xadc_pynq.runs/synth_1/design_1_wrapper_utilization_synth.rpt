@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-| Date         : Thu Apr 19 07:40:30 2018
+| Date         : Sat Apr 21 11:25:26 2018
 | Host         : litexia running 64-bit Ubuntu 16.04.2 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -186,12 +186,12 @@ Table of Contents
 | design_1_xbar_1                               |    1 |
 | design_1_xbar_0                               |    1 |
 | design_1_xadc_wiz_0_1                         |    1 |
+| design_1_system_ila_0                         |    1 |
+| design_1_system_ila1_0                        |    1 |
 | design_1_rst_processing_system7_0_100M_0      |    1 |
 | design_1_processing_system7_0_1               |    1 |
 | design_1_fir_compiler_0_3                     |    1 |
 | design_1_fir_compiler_0_2                     |    1 |
-| design_1_axis_data_fifo_0_1                   |    1 |
-| design_1_axis_data_fifo_0_0                   |    1 |
 | design_1_axi_uartlite_0_0                     |    1 |
 | design_1_axi_dma_0_1                          |    1 |
 | design_1_axi_dma_0_0                          |    1 |

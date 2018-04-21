@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Apr 21 09:51:01 2018
+# Process ID: 9071
+# Current directory: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_system_ila1_0_synth_1
+# Command line: vivado -log design_1_system_ila1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_system_ila1_0.tcl
+# Log file: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_system_ila1_0_synth_1/design_1_system_ila1_0.vds
+# Journal file: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_system_ila1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_system_ila1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1193.828 ; gain = 281.301 ; free physical = 676 ; free virtual = 11541
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila1_0' [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/synth/design_1_system_ila1_0.v:203]
+INFO: [Synth 8-638] synthesizing module 'bd_cc75' [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hdl/bd_cc75.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_cc75_g_inst_0' [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_1/synth/bd_cc75_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_cc75_g_inst_0_gigantic_mux' [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_1/bd_cc75_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_cc75_g_inst_0_gigantic_mux' (1#1) [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_1/bd_cc75_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_cc75_g_inst_0' (2#1) [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_1/synth/bd_cc75_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_cc75_ila_lib_0' [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_0/synth/bd_cc75_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (10#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (11#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (21#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (23#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (25#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (30#1) [/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'bd_cc75_ila_lib_0' (48#1) [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/ip/ip_0/synth/bd_cc75_ila_lib_0.v:84]
+INFO: [Synth 8-256] done synthesizing module 'bd_cc75' (49#1) [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hdl/bd_cc75.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_system_ila1_0' (50#1) [/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/synth/design_1_system_ila1_0.v:203]
+Finished RTL Elaboration : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1499.336 ; gain = 586.809 ; free physical = 374 ; free virtual = 10758
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1499.336 ; gain = 586.809 ; free physical = 383 ; free virtual = 10757
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1660.172 ; gain = 0.000 ; free physical = 252 ; free virtual = 10631
+Finished Constraint Validation : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 229 ; free virtual = 10609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 229 ; free virtual = 10609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 212 ; free virtual = 10592
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 150 ; free virtual = 10497
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:44 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 163 ; free virtual = 10413
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:01:56 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 135 ; free virtual = 10209
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:01:56 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 135 ; free virtual = 10209
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:01:57 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 139 ; free virtual = 10164
+Finished IO Insertion : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 139 ; free virtual = 10165
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 138 ; free virtual = 10163
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 136 ; free virtual = 10163
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 136 ; free virtual = 10163
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 135 ; free virtual = 10163
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 135 ; free virtual = 10163
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    20|
+|2     |CFGLUT5  |    56|
+|3     |LUT1     |    16|
+|4     |LUT2     |    43|
+|5     |LUT3     |    90|
+|6     |LUT4     |    93|
+|7     |LUT5     |    94|
+|8     |LUT6     |   328|
+|9     |MUXF7    |     4|
+|10    |RAMB36E1 |     1|
+|11    |SRL16E   |    24|
+|12    |SRLC16E  |     2|
+|13    |SRLC32E  |    17|
+|14    |FDRE     |   998|
+|15    |FDSE     |     9|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1660.172 ; gain = 747.645 ; free physical = 136 ; free virtual = 10162
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 1660.172 ; gain = 563.926 ; free physical = 741 ; free virtual = 10765

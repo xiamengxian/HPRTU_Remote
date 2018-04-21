@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/constrs_1/new/design_1.xdc rfile:../../../xadc_pynq.srcs/constrs_1/new/design_1.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/constrs_1/new/design_1.xdc rfile:../../../xadc_pynq.srcs/constrs_1/new/design_1.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K9 [get_ports Vp_Vn_v_p]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

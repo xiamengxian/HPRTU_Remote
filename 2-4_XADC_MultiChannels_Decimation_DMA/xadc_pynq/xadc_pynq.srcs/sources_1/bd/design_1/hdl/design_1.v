@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
-//Date        : Thu Apr 19 07:36:54 2018
+//Date        : Sat Apr 21 11:21:52 2018
 //Host        : litexia running 64-bit Ubuntu 16.04.2 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -117,9 +117,9 @@ module design_1
   wire [15:0]XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TDATA;
   wire XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TREADY;
   wire XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TVALID;
-  wire [15:0]XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TDATA;
-  wire XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TREADY;
-  wire XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TVALID;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [15:0]XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TDATA;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TREADY;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TVALID;
   wire [31:0]axi_dma_0_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_0_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_0_M_AXI_S2MM_AWCACHE;
@@ -291,14 +291,8 @@ module design_1
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
   wire axi_uartlite_0_interrupt;
-  wire [15:0]axis_data_fifo_0_M_AXIS_TDATA;
-  wire axis_data_fifo_0_M_AXIS_TREADY;
-  wire axis_data_fifo_0_M_AXIS_TVALID;
-  wire [15:0]axis_data_fifo_1_M_AXIS_TDATA;
-  wire axis_data_fifo_1_M_AXIS_TREADY;
-  wire axis_data_fifo_1_M_AXIS_TVALID;
-  wire [15:0]fir_compiler_0_M_AXIS_DATA_TDATA;
-  wire fir_compiler_0_M_AXIS_DATA_TVALID;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [15:0]fir_compiler_0_M_AXIS_DATA_TDATA;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire fir_compiler_0_M_AXIS_DATA_TVALID;
   wire [15:0]fir_compiler_1_M_AXIS_DATA_TDATA;
   wire fir_compiler_1_M_AXIS_DATA_TVALID;
   wire [14:0]processing_system7_0_DDR_ADDR;
@@ -846,38 +840,20 @@ module design_1
         .s_axi_wstrb(processing_system7_0_axi_periph_M03_AXI_WSTRB),
         .s_axi_wvalid(processing_system7_0_axi_periph_M03_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
-  design_1_axis_data_fifo_0_0 axis_data_fifo_0
-       (.m_axis_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .m_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
-        .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
-        .s_axis_aclk(Net2),
-        .s_axis_aresetn(Net3),
-        .s_axis_tdata(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TDATA),
-        .s_axis_tready(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TREADY),
-        .s_axis_tvalid(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TVALID));
-  design_1_axis_data_fifo_0_1 axis_data_fifo_1
-       (.m_axis_tdata(axis_data_fifo_1_M_AXIS_TDATA),
-        .m_axis_tready(axis_data_fifo_1_M_AXIS_TREADY),
-        .m_axis_tvalid(axis_data_fifo_1_M_AXIS_TVALID),
-        .s_axis_aclk(Net2),
-        .s_axis_aresetn(Net3),
-        .s_axis_tdata(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TDATA),
-        .s_axis_tready(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TREADY),
-        .s_axis_tvalid(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TVALID));
   design_1_fir_compiler_0_2 fir_compiler_0
        (.aclk(Net2),
         .m_axis_data_tdata(fir_compiler_0_M_AXIS_DATA_TDATA),
         .m_axis_data_tvalid(fir_compiler_0_M_AXIS_DATA_TVALID),
-        .s_axis_data_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .s_axis_data_tready(axis_data_fifo_0_M_AXIS_TREADY),
-        .s_axis_data_tvalid(axis_data_fifo_0_M_AXIS_TVALID));
+        .s_axis_data_tdata(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TDATA),
+        .s_axis_data_tready(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TREADY),
+        .s_axis_data_tvalid(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TVALID));
   design_1_fir_compiler_0_3 fir_compiler_1
        (.aclk(Net2),
         .m_axis_data_tdata(fir_compiler_1_M_AXIS_DATA_TDATA),
         .m_axis_data_tvalid(fir_compiler_1_M_AXIS_DATA_TVALID),
-        .s_axis_data_tdata(axis_data_fifo_1_M_AXIS_TDATA),
-        .s_axis_data_tready(axis_data_fifo_1_M_AXIS_TREADY),
-        .s_axis_data_tvalid(axis_data_fifo_1_M_AXIS_TVALID));
+        .s_axis_data_tdata(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TDATA),
+        .s_axis_data_tready(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TREADY),
+        .s_axis_data_tvalid(XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V_TVALID));
   design_1_processing_system7_0_1 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
@@ -1151,6 +1127,17 @@ module design_1
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(Net3),
         .slowest_sync_clk(Net2));
+  design_1_system_ila_0 system_ila
+       (.SLOT_0_AXIS_tdata(fir_compiler_0_M_AXIS_DATA_TDATA),
+        .SLOT_0_AXIS_tlast(1'b0),
+        .SLOT_0_AXIS_tvalid(fir_compiler_0_M_AXIS_DATA_TVALID),
+        .clk(Net2));
+  design_1_system_ila1_0 system_ila1
+       (.SLOT_0_AXIS_tdata(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TDATA),
+        .SLOT_0_AXIS_tlast(1'b0),
+        .SLOT_0_AXIS_tready(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TREADY),
+        .SLOT_0_AXIS_tvalid(XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V_TVALID),
+        .clk(Net2));
   design_1_xadc_wiz_0_1 xadc_wiz_0
        (.m_axis_tdata(xadc_wiz_0_M_AXIS_TDATA),
         .m_axis_tid(xadc_wiz_0_M_AXIS_TID),

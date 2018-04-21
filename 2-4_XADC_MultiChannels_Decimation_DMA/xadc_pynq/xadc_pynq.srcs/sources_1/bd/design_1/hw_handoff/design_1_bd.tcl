@@ -218,20 +218,32 @@ CONFIG.NUM_SI {2} \
 CONFIG.C_BAUDRATE {115200} \
  ] $axi_uartlite_0
 
-  # Create instance: axis_data_fifo_0, and set properties
-  set axis_data_fifo_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 axis_data_fifo_0 ]
-  set_property -dict [ list \
-CONFIG.FIFO_DEPTH {64} \
- ] $axis_data_fifo_0
-
-  # Create instance: axis_data_fifo_1, and set properties
-  set axis_data_fifo_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 axis_data_fifo_1 ]
-  set_property -dict [ list \
-CONFIG.FIFO_DEPTH {64} \
- ] $axis_data_fifo_1
-
   # Create instance: fir_compiler_0, and set properties
   set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
+  set_property -dict [ list \
+CONFIG.Clock_Frequency {50} \
+CONFIG.CoefficientVector {1,0} \
+CONFIG.Coefficient_Fractional_Bits {0} \
+CONFIG.Coefficient_Sets {1} \
+CONFIG.Coefficient_Sign {Unsigned} \
+CONFIG.Coefficient_Structure {Inferred} \
+CONFIG.Coefficient_Width {16} \
+CONFIG.Decimation_Rate {5} \
+CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+CONFIG.Filter_Type {Decimation} \
+CONFIG.Interpolation_Rate {1} \
+CONFIG.M_DATA_Has_TREADY {false} \
+CONFIG.Number_Channels {1} \
+CONFIG.Output_Rounding_Mode {Full_Precision} \
+CONFIG.Output_Width {16} \
+CONFIG.Quantization {Integer_Coefficients} \
+CONFIG.RateSpecification {Frequency_Specification} \
+CONFIG.Sample_Frequency {1} \
+CONFIG.Zero_Pack_Factor {1} \
+ ] $fir_compiler_0
+
+  # Create instance: fir_compiler_1, and set properties
+  set fir_compiler_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1 ]
   set_property -dict [ list \
 CONFIG.Clock_Frequency {50} \
 CONFIG.CoefficientVector {1,0} \
@@ -250,31 +262,7 @@ CONFIG.Output_Rounding_Mode {Full_Precision} \
 CONFIG.Output_Width {16} \
 CONFIG.Quantization {Integer_Coefficients} \
 CONFIG.RateSpecification {Frequency_Specification} \
-CONFIG.Sample_Frequency {1} \
-CONFIG.Zero_Pack_Factor {1} \
- ] $fir_compiler_0
-
-  # Create instance: fir_compiler_1, and set properties
-  set fir_compiler_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1 ]
-  set_property -dict [ list \
-CONFIG.Clock_Frequency {100} \
-CONFIG.CoefficientVector {1,0} \
-CONFIG.Coefficient_Fractional_Bits {0} \
-CONFIG.Coefficient_Sets {1} \
-CONFIG.Coefficient_Sign {Unsigned} \
-CONFIG.Coefficient_Structure {Inferred} \
-CONFIG.Coefficient_Width {16} \
-CONFIG.Decimation_Rate {50} \
-CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
-CONFIG.Filter_Type {Decimation} \
-CONFIG.Interpolation_Rate {1} \
-CONFIG.M_DATA_Has_TREADY {false} \
-CONFIG.Number_Channels {1} \
-CONFIG.Output_Rounding_Mode {Full_Precision} \
-CONFIG.Output_Width {16} \
-CONFIG.Quantization {Integer_Coefficients} \
-CONFIG.RateSpecification {Frequency_Specification} \
-CONFIG.Sample_Frequency {1} \
+CONFIG.Sample_Frequency {0.5} \
 CONFIG.Zero_Pack_Factor {1} \
  ] $fir_compiler_1
 
@@ -1444,6 +1432,28 @@ CONFIG.NUM_MI {4} \
   # Create instance: rst_processing_system7_0_50M, and set properties
   set rst_processing_system7_0_50M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_processing_system7_0_50M ]
 
+  # Create instance: system_ila, and set properties
+  set system_ila [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila ]
+  set_property -dict [ list \
+CONFIG.C_MON_TYPE {INTERFACE} \
+CONFIG.C_NUM_MONITOR_SLOTS {1} \
+CONFIG.C_SLOT_0_APC_EN {0} \
+CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
+CONFIG.C_SLOT_0_AXI_TRIG_SEL {1} \
+CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+ ] $system_ila
+
+  # Create instance: system_ila1, and set properties
+  set system_ila1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila1 ]
+  set_property -dict [ list \
+CONFIG.C_MON_TYPE {INTERFACE} \
+CONFIG.C_NUM_MONITOR_SLOTS {1} \
+CONFIG.C_SLOT_0_APC_EN {0} \
+CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
+CONFIG.C_SLOT_0_AXI_TRIG_SEL {1} \
+CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+ ] $system_ila1
+
   # Create instance: xadc_wiz_0, and set properties
   set xadc_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0 ]
   set_property -dict [ list \
@@ -1532,8 +1542,12 @@ CONFIG.CONST_WIDTH {1} \
   connect_bd_intf_net -intf_net Vp_Vn_1 [get_bd_intf_ports Vp_Vn] [get_bd_intf_pins xadc_wiz_0/Vp_Vn]
   connect_bd_intf_net -intf_net XADC_SignalChannel_PreProcess_64_0_M_AXIS [get_bd_intf_pins XADC_SignalChannel_PreProcess_64_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
   connect_bd_intf_net -intf_net XADC_SignalChannel_PreProcess_64_1_M_AXIS [get_bd_intf_pins XADC_SignalChannel_PreProcess_64_1/M_AXIS] [get_bd_intf_pins axi_dma_1/S_AXIS_S2MM]
-  connect_bd_intf_net -intf_net XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_AD1_data_V] [get_bd_intf_pins axis_data_fifo_1/S_AXIS]
-  connect_bd_intf_net -intf_net XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_VPVN_data_V] [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+  connect_bd_intf_net -intf_net XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_AD1_data_V] [get_bd_intf_pins fir_compiler_1/S_AXIS_DATA]
+  connect_bd_intf_net -intf_net XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_VPVN_data_V] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
+connect_bd_intf_net -intf_net [get_bd_intf_nets XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V] [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_VPVN_data_V] [get_bd_intf_pins system_ila1/SLOT_0_AXIS]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_intf_nets XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V]
   connect_bd_intf_net -intf_net axi_dma_0_M_AXI_S2MM [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins axi_mem_intercon/S01_AXI]
   connect_bd_intf_net -intf_net axi_dma_0_M_AXI_SG [get_bd_intf_pins axi_dma_0/M_AXI_SG] [get_bd_intf_pins axi_mem_intercon/S00_AXI]
   connect_bd_intf_net -intf_net axi_dma_1_M_AXI_S2MM [get_bd_intf_pins axi_dma_1/M_AXI_S2MM] [get_bd_intf_pins axi_mem_intercon1/S01_AXI]
@@ -1541,9 +1555,11 @@ CONFIG.CONST_WIDTH {1} \
   connect_bd_intf_net -intf_net axi_mem_intercon1_M00_AXI [get_bd_intf_pins axi_mem_intercon1/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
   connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports uart_rtl] [get_bd_intf_pins axi_uartlite_0/UART]
-  connect_bd_intf_net -intf_net axis_data_fifo_0_M_AXIS [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
-  connect_bd_intf_net -intf_net axis_data_fifo_1_M_AXIS [get_bd_intf_pins axis_data_fifo_1/M_AXIS] [get_bd_intf_pins fir_compiler_1/S_AXIS_DATA]
   connect_bd_intf_net -intf_net fir_compiler_0_M_AXIS_DATA [get_bd_intf_pins XADC_SignalChannel_PreProcess_64_0/S_AXIS_data_V] [get_bd_intf_pins fir_compiler_0/M_AXIS_DATA]
+connect_bd_intf_net -intf_net [get_bd_intf_nets fir_compiler_0_M_AXIS_DATA] [get_bd_intf_pins fir_compiler_0/M_AXIS_DATA] [get_bd_intf_pins system_ila/SLOT_0_AXIS]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_intf_nets fir_compiler_0_M_AXIS_DATA]
   connect_bd_intf_net -intf_net fir_compiler_1_M_AXIS_DATA [get_bd_intf_pins XADC_SignalChannel_PreProcess_64_1/S_AXIS_data_V] [get_bd_intf_pins fir_compiler_1/M_AXIS_DATA]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
@@ -1556,8 +1572,8 @@ CONFIG.CONST_WIDTH {1} \
   connect_bd_intf_net -intf_net xadc_wiz_0_M_AXIS [get_bd_intf_pins XADC_multiChannels_PreProcess_0/S_AXIS] [get_bd_intf_pins xadc_wiz_0/M_AXIS]
 
   # Create port connections
-  connect_bd_net -net Net2 [get_bd_pins XADC_SignalChannel_PreProcess_64_0/ap_clk] [get_bd_pins XADC_SignalChannel_PreProcess_64_1/ap_clk] [get_bd_pins XADC_multiChannels_PreProcess_0/ap_clk] [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins axi_dma_1/m_axi_s2mm_aclk] [get_bd_pins axi_dma_1/m_axi_sg_aclk] [get_bd_pins axi_dma_1/s_axi_lite_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_mem_intercon1/ACLK] [get_bd_pins axi_mem_intercon1/M00_ACLK] [get_bd_pins axi_mem_intercon1/S00_ACLK] [get_bd_pins axi_mem_intercon1/S01_ACLK] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins axis_data_fifo_0/s_axis_aclk] [get_bd_pins axis_data_fifo_1/s_axis_aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins fir_compiler_1/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/M03_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_50M/slowest_sync_clk] [get_bd_pins xadc_wiz_0/s_axi_aclk] [get_bd_pins xadc_wiz_0/s_axis_aclk]
-  connect_bd_net -net Net3 [get_bd_pins XADC_SignalChannel_PreProcess_64_0/ap_rst_n] [get_bd_pins XADC_SignalChannel_PreProcess_64_1/ap_rst_n] [get_bd_pins XADC_multiChannels_PreProcess_0/ap_rst_n] [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins axi_dma_1/axi_resetn] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_mem_intercon1/ARESETN] [get_bd_pins axi_mem_intercon1/M00_ARESETN] [get_bd_pins axi_mem_intercon1/S00_ARESETN] [get_bd_pins axi_mem_intercon1/S01_ARESETN] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins axis_data_fifo_0/s_axis_aresetn] [get_bd_pins axis_data_fifo_1/s_axis_aresetn] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
+  connect_bd_net -net Net2 [get_bd_pins XADC_SignalChannel_PreProcess_64_0/ap_clk] [get_bd_pins XADC_SignalChannel_PreProcess_64_1/ap_clk] [get_bd_pins XADC_multiChannels_PreProcess_0/ap_clk] [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins axi_dma_1/m_axi_s2mm_aclk] [get_bd_pins axi_dma_1/m_axi_sg_aclk] [get_bd_pins axi_dma_1/s_axi_lite_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_mem_intercon1/ACLK] [get_bd_pins axi_mem_intercon1/M00_ACLK] [get_bd_pins axi_mem_intercon1/S00_ACLK] [get_bd_pins axi_mem_intercon1/S01_ACLK] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins fir_compiler_1/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/M03_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_50M/slowest_sync_clk] [get_bd_pins system_ila/clk] [get_bd_pins system_ila1/clk] [get_bd_pins xadc_wiz_0/s_axi_aclk] [get_bd_pins xadc_wiz_0/s_axis_aclk]
+  connect_bd_net -net Net3 [get_bd_pins XADC_SignalChannel_PreProcess_64_0/ap_rst_n] [get_bd_pins XADC_SignalChannel_PreProcess_64_1/ap_rst_n] [get_bd_pins XADC_multiChannels_PreProcess_0/ap_rst_n] [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins axi_dma_1/axi_resetn] [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_mem_intercon1/ARESETN] [get_bd_pins axi_mem_intercon1/M00_ARESETN] [get_bd_pins axi_mem_intercon1/S00_ARESETN] [get_bd_pins axi_mem_intercon1/S01_ARESETN] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
   connect_bd_net -net axi_dma_0_s2mm_introut [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net axi_dma_1_s2mm_introut [get_bd_pins axi_dma_1/s2mm_introut] [get_bd_pins xlconcat_0/In1]
   connect_bd_net -net axi_uartlite_0_interrupt [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins xlconcat_0/In2]
@@ -1584,84 +1600,82 @@ CONFIG.CONST_WIDTH {1} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port uart_rtl -pg 1 -y 770 -defaultsOSRD
-preplace port DDR -pg 1 -y 910 -defaultsOSRD
-preplace port Vp_Vn -pg 1 -y 1190 -defaultsOSRD
-preplace port Vaux1 -pg 1 -y 1210 -defaultsOSRD
-preplace port UART_1 -pg 1 -y 950 -defaultsOSRD
-preplace port Vaux5 -pg 1 -y 1230 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 930 -defaultsOSRD
-preplace port Vaux13 -pg 1 -y 1290 -defaultsOSRD
-preplace port Vaux6 -pg 1 -y 1250 -defaultsOSRD
-preplace port Vaux15 -pg 1 -y 1310 -defaultsOSRD
-preplace port Vaux9 -pg 1 -y 1270 -defaultsOSRD
-preplace inst axis_data_fifo_1 -pg 1 -lvl 5 -y 660 -defaultsOSRD
-preplace inst fir_compiler_0 -pg 1 -lvl 6 -y 820 -defaultsOSRD
+preplace port uart_rtl -pg 1 -y 650 -defaultsOSRD
+preplace port DDR -pg 1 -y 770 -defaultsOSRD
+preplace port Vp_Vn -pg 1 -y 1020 -defaultsOSRD
+preplace port Vaux1 -pg 1 -y 1040 -defaultsOSRD
+preplace port UART_1 -pg 1 -y 810 -defaultsOSRD
+preplace port Vaux5 -pg 1 -y 1060 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 790 -defaultsOSRD
+preplace port Vaux13 -pg 1 -y 1120 -defaultsOSRD
+preplace port Vaux6 -pg 1 -y 1080 -defaultsOSRD
+preplace port Vaux15 -pg 1 -y 1140 -defaultsOSRD
+preplace port Vaux9 -pg 1 -y 1100 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 5 -y 840 -defaultsOSRD
 preplace inst XADC_multiChannels_PreProcess_0 -pg 1 -lvl 4 -y 400 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 8 -y 1010 -defaultsOSRD
-preplace inst fir_compiler_1 -pg 1 -lvl 6 -y 650 -defaultsOSRD
-preplace inst axi_dma_1 -pg 1 -lvl 8 -y 800 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 7 -y 870 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 7 -y 650 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 4 -y 50 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 3 -y 1270 -defaultsOSRD
-preplace inst XADC_SignalChannel_PreProcess_64_0 -pg 1 -lvl 7 -y 840 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -y 1100 -defaultsOSRD
+preplace inst XADC_SignalChannel_PreProcess_64_0 -pg 1 -lvl 6 -y 850 -defaultsOSRD
 preplace inst xlconstant_2 -pg 1 -lvl 4 -y 130 -defaultsOSRD
-preplace inst XADC_SignalChannel_PreProcess_64_1 -pg 1 -lvl 7 -y 670 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 9 -y 1040 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 6 -y 990 -defaultsOSRD
+preplace inst XADC_SignalChannel_PreProcess_64_1 -pg 1 -lvl 6 -y 670 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -y 900 -defaultsOSRD
 preplace inst xlconstant_3 -pg 1 -lvl 4 -y 210 -defaultsOSRD
 preplace inst xlconstant_4 -pg 1 -lvl 4 -y 590 -defaultsOSRD
-preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 910 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 730 -defaultsOSRD
+preplace inst system_ila1 -pg 1 -lvl 5 -y 680 -defaultsOSRD
 preplace inst xlconstant_5 -pg 1 -lvl 4 -y 670 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 10 -y 780 -defaultsOSRD
-preplace inst axi_mem_intercon1 -pg 1 -lvl 9 -y 730 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 9 -y 450 -defaultsOSRD
-preplace inst axis_data_fifo_0 -pg 1 -lvl 5 -y 840 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 920 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 10 -y 970 -defaultsOSRD
-preplace netloc Vaux6_1 1 0 3 NJ 1250 NJ 1250 NJ
-preplace netloc processing_system7_0_DDR 1 10 1 NJ
+preplace inst axi_uartlite_0 -pg 1 -lvl 9 -y 660 -defaultsOSRD
+preplace inst axi_mem_intercon1 -pg 1 -lvl 8 -y 370 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 8 -y 650 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 740 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 9 -y 830 -defaultsOSRD
+preplace netloc Vaux6_1 1 0 3 NJ 1080 NJ 1080 NJ
+preplace netloc processing_system7_0_DDR 1 9 1 NJ
 preplace netloc xlconstant_5_dout 1 4 1 1400
 preplace netloc xlconstant_1_dout 1 4 1 1420
-preplace netloc axi_dma_1_M_AXI_S2MM 1 8 1 2790
-preplace netloc axi_dma_1_M_AXI_SG 1 8 1 2780
+preplace netloc axi_dma_1_M_AXI_S2MM 1 7 1 2540
+preplace netloc axi_dma_1_M_AXI_SG 1 7 1 2530
 preplace netloc xlconstant_2_dout 1 4 1 1410
 preplace netloc XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V 1 4 1 1430
-preplace netloc processing_system7_0_UART_1 1 10 1 NJ
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 8 N 950 NJ 950 NJ 950 NJ 950 NJ 950 2410J 910 NJ 910 3110J
-preplace netloc XADC_SignalChannel_PreProcess_64_1_M_AXIS 1 7 1 2420
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 680
-preplace netloc axi_uartlite_0_interrupt 1 8 3 2820 1110 NJ 1110 3580
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 10 380 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 2390J 900 NJ 900 3130J 850 3570
-preplace netloc Vp_Vn_1 1 0 3 NJ 1190 NJ 1190 NJ
-preplace netloc xadc_wiz_0_M_AXIS 1 3 1 980
-preplace netloc axi_dma_1_s2mm_introut 1 8 1 2780
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 11 20 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 3570
-preplace netloc fir_compiler_1_M_AXIS_DATA 1 6 1 N
-preplace netloc XADC_SignalChannel_PreProcess_64_0_M_AXIS 1 7 1 2380
-preplace netloc axi_dma_0_M_AXI_SG 1 8 1 2760
-preplace netloc axi_mem_intercon_M00_AXI 1 9 1 3140
-preplace netloc Vaux5_1 1 0 3 NJ 1230 NJ 1230 NJ
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 6 N 930 NJ 930 NJ 930 NJ 930 NJ 930 2370J
-preplace netloc axi_dma_0_s2mm_introut 1 8 1 2760
-preplace netloc xlconcat_0_dout 1 9 1 N
-preplace netloc processing_system7_0_FIXED_IO 1 10 1 NJ
-preplace netloc axi_uartlite_0_UART 1 10 1 NJ
-preplace netloc Vaux13_1 1 0 3 NJ 1290 NJ 1290 NJ
-preplace netloc Vaux9_1 1 0 3 NJ 1270 NJ 1270 NJ
-preplace netloc axi_dma_0_M_AXI_S2MM 1 8 1 2770
+preplace netloc processing_system7_0_UART_1 1 9 1 NJ
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 7 670J 760 NJ 760 NJ 760 NJ 760 NJ 760 2540J 800 2860
+preplace netloc XADC_SignalChannel_PreProcess_64_1_M_AXIS 1 6 1 2150
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 690
+preplace netloc axi_uartlite_0_interrupt 1 7 3 2580 970 NJ 970 3330
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 9 390 930 NJ 930 NJ 930 NJ 930 NJ 930 2140J 990 NJ 990 NJ 990 3350
+preplace netloc Vp_Vn_1 1 0 3 NJ 1020 NJ 1020 NJ
+preplace netloc xadc_wiz_0_M_AXIS 1 3 1 970
+preplace netloc axi_dma_1_s2mm_introut 1 7 1 2530
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 10 20 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 2150J 980 NJ 980 NJ 980 3320
+preplace netloc fir_compiler_1_M_AXIS_DATA 1 5 1 1780
+preplace netloc XADC_SignalChannel_PreProcess_64_0_M_AXIS 1 6 1 2170
+preplace netloc axi_dma_0_M_AXI_SG 1 7 1 2550
+preplace netloc axi_mem_intercon_M00_AXI 1 8 1 2870
+preplace netloc Vaux5_1 1 0 3 NJ 1060 NJ 1060 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 5 N 750 NJ 750 NJ 750 NJ 750 2140J
+preplace netloc axi_dma_0_s2mm_introut 1 7 1 2520
+preplace netloc xlconcat_0_dout 1 8 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 9 1 NJ
+preplace netloc axi_uartlite_0_UART 1 9 1 NJ
+preplace netloc Vaux13_1 1 0 3 NJ 1120 NJ 1120 NJ
+preplace netloc Vaux9_1 1 0 3 NJ 1100 NJ 1100 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 7 1 2570
 preplace netloc xlconstant_4_dout 1 4 1 1410
-preplace netloc axis_data_fifo_1_M_AXIS 1 5 1 1780
-preplace netloc axis_data_fifo_0_M_AXIS 1 5 1 N
-preplace netloc Vaux1_1 1 0 3 NJ 1210 NJ 1210 NJ
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 380
-preplace netloc fir_compiler_0_M_AXIS_DATA 1 6 1 N
-preplace netloc Net2 1 0 11 10 1110 370 1110 690 1110 990 1110 1460 1110 1780 1110 2060 1110 2400 1110 2800 890 3120 710 3590
+preplace netloc Vaux1_1 1 0 3 NJ 1040 NJ 1040 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 360
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 5 1 1800
+preplace netloc Net2 1 0 10 20 640 370 940 700 720 980 1160 1450 1160 1780 1160 2160 1160 2560 1160 2890 1160 3340
 preplace netloc XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V 1 4 1 1440
-preplace netloc Vaux15_1 1 0 3 NJ 1310 NJ 1310 NJ
-preplace netloc axi_mem_intercon1_M00_AXI 1 9 1 3100
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 6 670 960 NJ 960 NJ 960 NJ 960 NJ 960 NJ
-preplace netloc Net3 1 1 9 360 710 700 710 1000 1370 1450 1370 NJ 1370 2070 1370 2420 1370 2810 1370 3150J
+preplace netloc Vaux15_1 1 0 3 NJ 1140 NJ 1140 NJ
+preplace netloc axi_mem_intercon1_M00_AXI 1 8 1 2880
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 5 680J 780 NJ 780 NJ 780 NJ 780 2170
+preplace netloc Net3 1 1 8 380 950 710 770 990 770 NJ 770 1790 770 2180 770 2580 810 2900J
 preplace netloc xlconstant_3_dout 1 4 1 1400
-levelinfo -pg 1 -10 190 530 850 1200 1620 1920 2220 2590 2960 3360 3610 -top 0 -bot 1420
+levelinfo -pg 1 0 190 530 840 1200 1640 1990 2350 2720 3110 3370 -top 0 -bot 1250
 ",
 }
 

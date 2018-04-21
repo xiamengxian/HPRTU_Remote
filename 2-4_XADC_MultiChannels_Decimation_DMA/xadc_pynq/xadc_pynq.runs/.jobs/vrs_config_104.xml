@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_fir_compiler_0_2_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_fir_compiler_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_0_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_system_ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila1_0_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_system_ila1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_2_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_1_synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_fir_compiler_0_2_synth_1"/>
+		<Parent Id="design_1_system_ila_0_synth_1"/>
+		<Parent Id="design_1_system_ila1_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_fir_compiler_0_2_synth_1"/>
+		<Parent Id="design_1_system_ila_0_synth_1"/>
+		<Parent Id="design_1_system_ila1_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_2_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_1_synth_1"/>
+	</Run>
+</Runs>
+

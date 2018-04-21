@@ -1,0 +1,1285 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+Process ID: 8509
+
+Current time: 	4/21/18 9:44:24 AM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 4.13.0-38-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/tps/lnx64/jre
+
+User name: 	lite
+User home directory: /home/lite
+User working directory: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado
+RDI data directory: /media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/data
+RDI bin directory: /media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/bin
+
+Vivado preferences path: /home/lite/.Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: /home/lite/.Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 816 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 31 MB (+30503kb) [00:00:09]
+// [Engine Memory]: 802 MB (+689068kb) [00:00:09]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr");
+// [GUI Memory]: 44 MB (+11058kb) [00:00:13]
+// [Engine Memory]: 843 MB (+1269kb) [00:00:13]
+// Opening Vivado Project: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 25 MB. Current time: 4/21/18 9:44:27 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 906 MB (+22102kb) [00:00:26]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+4502kb) [00:00:30]
+// [Engine Memory]: 974 MB (+23574kb) [00:00:30]
+// [GUI Memory]: 62 MB (+9790kb) [00:00:30]
+// Tcl Message: open_project /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/media/lite/DATA/E_Dissertation/HPRTU_Remote/Lite_IP'; using path '/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/Lite_IP' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/Lite_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/lite/DATA/A_Software/Xilinx/Vivado2016.03/Vivado/2016.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 41 MB. Current time: 4/21/18 9:44:45 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 6002.188 ; gain = 151.953 ; free physical = 3658 ; free virtual = 14142 
+// Project name: xadc_pynq; location: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq; part: xc7z020clg400-1
+// 'i' command handler elapsed time: 23 seconds
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 20 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// [Engine Memory]: 1,027 MB (+4409kb) [00:00:36]
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk -hwspec /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 67 MB (+1581kb) [00:01:01]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,071 MB. GUI used memory: 44 MB. Current time: 4/21/18 9:45:15 AM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// [Engine Memory]: 1,119 MB (+42426kb) [00:01:03]
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 6126.383 ; gain = 105.191 ; free physical = 3085 ; free virtual = 13722 
+// 'bp' command handler elapsed time: 11 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+// [GUI Memory]: 70 MB (+7kb) [00:01:05]
+// [GUI Memory]: 74 MB (+685kb) [00:01:08]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 118 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,147 MB. GUI used memory: 53 MB. Current time: 4/21/18 9:47:17 AM CST
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// [GUI Memory]: 79 MB (+971kb) [00:03:24]
+// [GUI Memory]: 84 MB (+808kb) [00:03:34]
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Confirm Delete : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets XADC_multiChannels_PreProcess_0_M_AXIS_AD1_data_V] [get_bd_intf_nets axis_data_fifo_1_M_AXIS] [get_bd_cells axis_data_fifo_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 88 MB (+209kb) [00:04:08]
+// Elapsed time: 46 seconds
+dismissDialog("Confirm Delete"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells axis_data_fifo_0] 
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Confirm Delete : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_VPVN_data_V] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// [GUI Memory]: 94 MB (+1418kb) [00:04:18]
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins fir_compiler_1/S_AXIS_DATA] [get_bd_intf_pins XADC_multiChannels_PreProcess_0/M_AXIS_AD1_data_V] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// [GUI Memory]: 101 MB (+2817kb) [00:04:30]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+setText("Decimation Rate Value", "3"); // M:ak (cQ:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Decimation_Rate {3} CONFIG.Number_Channels {1} CONFIG.Sample_Frequency {1} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {16} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_0]'
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// bt:g (p:g):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Decimation_Rate {3} CONFIG.Number_Channels {1} CONFIG.Sample_Frequency {1} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {16} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_0] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bt:g (p:g)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 289, 342, 1189, 655, false, false, false, true, false); // eU:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V }]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// bt:g (cd:JFrame):  Debug : addNotify
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V }] 
+// Tcl Message: true 
+dismissDialog("Debug"); // bt:g (cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 558, 430, 1189, 655, false, false, false, true, false); // eU:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 66 MB. Current time: 4/21/18 9:49:07 AM CST
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {fir_compiler_0_M_AXIS_DATA }]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {fir_compiler_0_M_AXIS_DATA }] 
+// bt:g (cd:JFrame):  Debug : addNotify
+// Tcl Message: true 
+dismissDialog("Debug"); // bt:g (cd:JFrame)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:k (JPanel:JComponent, cd:JFrame)
+// s:q (cd:JFrame): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected), Interface Connections, XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V]", 3, false, true, ui.utils.TriState.True); // F:a (JViewport:JComponent, s:q)
+selectComboBox("pa.OptGroup_xilinx.com_bd_rule_debug_SYSTEM_ILA", "New", 1); // e:JComboBox (JPanel:JComponent, s:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:q)
+dismissDialog("Run Connection Automation"); // s:q (cd:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Run Connection Automation : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \                                                           [get_bd_intf_nets fir_compiler_0_M_AXIS_DATA] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \                                                           [get_bd_intf_nets XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "New" APC_EN "0" } \                                                          ] 
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,210 MB (+37443kb) [00:05:18]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Engine heap size: 1,214 MB. GUI used memory: 67 MB. Current time: 4/21/18 9:49:31 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Debug Automation : Instantiating new System ILA block '/system_ila' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation. Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK0 to the following sink clock pins : /system_ila/clk Debug Automation : Connecting interface connection /fir_compiler_0_M_AXIS_DATA, to System ILA slot interface pin /system_ila/SLOT_0_AXIS for debug. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Debug Automation : Instantiating new System ILA block '/system_ila1' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation. Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK0 to the following sink clock pins : /system_ila1/clk Debug Automation : Connecting interface connection /XADC_multiChannels_PreProcess_0_M_AXIS_VPVN_data_V, to System ILA slot interface pin /system_ila1/SLOT_0_AXIS for debug. 
+// Tcl Message: apply_bd_automation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6206.840 ; gain = 47.938 ; free physical = 2611 ; free virtual = 13391 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 18 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// [Engine Memory]: 1,271 MB (+78kb) [00:05:47]
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Validate Design : addNotify
+// Tcl Message: validate_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,272 MB. GUI used memory: 65 MB. Current time: 4/21/18 9:50:02 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,380 MB (+47936kb) [00:06:04]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [xilinx.com:ip:fir_compiler:7.2-308] /fir_compiler_1 S_AXIS_DATA-TDATA: Validating field: chan_0_path_0(16:0): fix16_0 against /XADC_multiChannels_PreProcess_0 M_AXIS_AD1_data_V-TDATA: integer(16:0): int16. INFO: [xilinx.com:ip:fir_compiler:7.2-308] /fir_compiler_0 S_AXIS_DATA-TDATA: Validating field: chan_0_path_0(16:0): fix16_0 against /XADC_multiChannels_PreProcess_0 M_AXIS_VPVN_data_V-TDATA: integer(16:0): int16. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 6375.176 ; gain = 163.336 ; free physical = 2420 ; free virtual = 13223 
+// Elapsed time: 20 seconds
+dismissDialog("Validate Design"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a:q (cd:JFrame): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+dismissDialog("Create HDL Wrapper"); // a:q (cd:JFrame)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Create HDL Wrapper : addNotify
+// Tcl Message: make_wrapper -files [get_files /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd] -top 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : </media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Create HDL Wrapper"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,441 MB. GUI used memory: 66 MB. Current time: 4/21/18 9:50:32 AM CST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bt:g (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_fir_compiler_0_2_synth_1 
+// 'ci' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// [Engine Memory]: 1,454 MB (+4519kb) [00:06:27]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_compiler_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_compiler_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hw_handoff/design_1_system_ila_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hw_handoff/design_1_system_ila_0_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hdl/design_1_system_ila_0.hwdef 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 65 MB. Current time: 4/21/18 9:50:52 AM CST
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hw_handoff/design_1_system_ila1_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hw_handoff/design_1_system_ila1_0_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hdl/design_1_system_ila1_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/m00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,589 MB (+65332kb) [00:06:46]
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 6616.902 ; gain = 192.867 ; free physical = 2032 ; free virtual = 12870 
+// Elapsed time: 23 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// [GUI Memory]: 107 MB (+543kb) [00:07:26]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,618 MB. GUI used memory: 99 MB. Current time: 4/21/18 9:51:57 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 117 MB (+5352kb) [00:08:00]
+// [GUI Memory]: 131 MB (+8482kb) [00:08:07]
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 138 MB (+471kb) [00:08:56]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,724 MB (+58442kb) [00:09:01]
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,725 MB. GUI used memory: 81 MB. Current time: 4/21/18 9:53:17 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 146 MB (+622kb) [00:09:49]
+// [GUI Memory]: 154 MB (+1520kb) [00:09:59]
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 168 MB (+6107kb) [00:10:03]
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 177 MB (+773kb) [00:10:38]
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 187 MB (+941kb) [00:21:23]
+// [GUI Memory]: 197 MB (+960kb) [00:28:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,725 MB. GUI used memory: 76 MB. Current time: 4/21/18 10:23:22 AM CST
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 3521 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,727 MB. GUI used memory: 81 MB. Current time: 4/21/18 10:53:22 AM CST
+// Elapsed time: 646 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Elapsed time: 43 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g:JCheckBox (JPanel:JComponent, X:q): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// Tcl Message: file copy -force /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/impl_1/design_1_wrapper.sysdef /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf  
+// Elapsed time: 339 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 694 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// Elapsed time: 19 seconds
+setText("Decimation Rate Value", "5"); // M:ak (cQ:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Decimation_Rate {5} CONFIG.Number_Channels {1} CONFIG.Sample_Frequency {1} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {16} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_0]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Decimation_Rate {5} CONFIG.Number_Channels {1} CONFIG.Sample_Frequency {1} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {16} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// bt:g (p:g):  Customize IP : addNotify
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bt:g (p:g)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 54 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Channel Specification", 1); // cP:g (C:JPanel, p:g)
+// Elapsed time: 11 seconds
+setText("Clock Frequency (MHz)", "50"); // M:ak (cQ:L, p:g)
+setText("Input Sampling Frequency (MHz)", "0.5"); // M:ak (cQ:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Sample_Frequency {0.5} CONFIG.Clock_Frequency {50} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_1]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// bt:g (p:g):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Sample_Frequency {0.5} CONFIG.Clock_Frequency {50} CONFIG.Clock_Frequency {50} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir_compiler_1] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bt:g (p:g)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// cm:q (p:g): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,755 MB. GUI used memory: 109 MB. Current time: 4/21/18 11:20:32 AM CST
+selectButton("Clock Configuration", "Clock Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A:cv (JViewport:JComponent, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Channel Specification", 1); // cP:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Validate Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: validate_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,772 MB. GUI used memory: 126 MB. Current time: 4/21/18 11:21:32 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [xilinx.com:ip:fir_compiler:7.2-308] /fir_compiler_1 S_AXIS_DATA-TDATA: Validating field: chan_0_path_0(16:0): fix16_0 against /XADC_multiChannels_PreProcess_0 M_AXIS_AD1_data_V-TDATA: integer(16:0): int16. INFO: [xilinx.com:ip:fir_compiler:7.2-308] /fir_compiler_0 S_AXIS_DATA-TDATA: Validating field: chan_0_path_0(16:0): fix16_0 against /XADC_multiChannels_PreProcess_0 M_AXIS_VPVN_data_V-TDATA: integer(16:0): int16. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 6682.754 ; gain = 12.984 ; free physical = 496 ; free virtual = 11373 
+// Elapsed time: 23 seconds
+dismissDialog("Validate Design"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a:q (cd:JFrame): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+dismissDialog("Create HDL Wrapper"); // a:q (cd:JFrame)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Create HDL Wrapper : addNotify
+// Tcl Message: make_wrapper -files [get_files /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd] -top 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v Wrote  : </media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/design_1.bd>  
+dismissDialog("Create HDL Wrapper"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_fir_compiler_0_2_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_fir_compiler_0_3_synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_compiler_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,799 MB. GUI used memory: 124 MB. Current time: 4/21/18 11:21:57 AM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hw_handoff/design_1_system_ila_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hw_handoff/design_1_system_ila_0_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0/bd_0/hdl/design_1_system_ila_0.hwdef 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,817 MB (+7076kb) [01:37:49]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hw_handoff/design_1_system_ila1_0.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hw_handoff/design_1_system_ila1_0_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/ip/design_1_system_ila1_0/bd_0/hdl/design_1_system_ila1_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/m00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 6736.867 ; gain = 54.113 ; free physical = 451 ; free virtual = 11302 
+// Elapsed time: 18 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.4s
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 211 MB (+3770kb) [01:39:16]
+// [GUI Memory]: 221 MB (+37kb) [01:39:31]
+// [GUI Memory]: 234 MB (+1639kb) [01:39:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 125 MB. Current time: 4/21/18 11:24:17 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// [Engine Memory]: 1,908 MB (+35kb) [02:01:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 128 MB. Current time: 4/21/18 11:54:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 127 MB. Current time: 4/21/18 12:24:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 127 MB. Current time: 4/21/18 12:54:17 PM CST
+// Elapsed time: 5535 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// Tcl Message: file copy -force /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/impl_1/design_1_wrapper.sysdef /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/design_1_wrapper.hdf  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 127 MB. Current time: 4/21/18 1:24:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 126 MB. Current time: 4/21/18 1:54:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,908 MB. GUI used memory: 126 MB. Current time: 4/21/18 2:24:17 PM CST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 6523 seconds
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 314 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Channel Specification", 1); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 2); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 3); // cP:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,917 MB. GUI used memory: 151 MB. Current time: 4/21/18 2:54:18 PM CST

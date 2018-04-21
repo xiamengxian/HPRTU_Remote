@@ -1,4 +1,4 @@
-19:19:04 **** Auto Build of configuration Debug for project XBPrj_Version ****
+10:29:51 **** Auto Build of configuration Debug for project XBPrj_Version ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -84,15 +84,16 @@ Finished building: ../src/xdma.c
  
 Building target: XBPrj_Version.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../XBPrj_Version_bsp/ps7_cortexa9_0/lib -o "XBPrj_Version.elf"  ./src/data_process.o ./src/dwin_uart.o ./src/python_uart.o ./src/sd_data.o ./src/xadc_multiChannels_dma_sg_intr.o ./src/xdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: XBPrj_Version.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size XBPrj_Version.elf  |tee "XBPrj_Version.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 111960	   4352	  29584	 145896	  239e8	XBPrj_Version.elf
-Finished building: XBPrj_Version.elf.size
- 
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../XBPrj_Version_bsp/ps7_cortexa9_0/lib -o "XBPrj_Version.elf"  ./src/data_process.o ./src/dwin_uart.o ./src/python_uart.o ./src/sd_data.o ./src/xadc_multiChannels_dma_sg_intr.o ./src/xdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/sd_data.o: In function `sd_write':
+/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/XBPrj_Version/Debug/../src/sd_data.c:22: undefined reference to `f_mount'
+/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/XBPrj_Version/Debug/../src/sd_data.c:28: undefined reference to `f_open'
+makefile:39: recipe for target 'XBPrj_Version.elf' failed
+/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/XBPrj_Version/Debug/../src/sd_data.c:33: undefined reference to `f_lseek'
+/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/XBPrj_Version/Debug/../src/sd_data.c:40: undefined reference to `f_write'
+/media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.sdk/XBPrj_Version/Debug/../src/sd_data.c:47: undefined reference to `f_close'
+collect2: error: ld returned 1 exit status
+make: *** [XBPrj_Version.elf] Error 1
 
-19:19:05 Build Finished (took 916ms)
+10:29:52 Build Finished (took 816ms)
 

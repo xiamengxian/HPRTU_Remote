@@ -2,11 +2,11 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Apr 19 07:37:03 2018
-# Process ID: 3600
-# Current directory: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1
+# Start of session at: Sat Apr 21 11:22:10 2018
+# Process ID: 22207
+# Current directory: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1
 # Command line: vivado -log design_1_auto_pc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_2.tcl
-# Log file: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1/design_1_auto_pc_2.vds
-# Journal file: /media/lite/DATA/E_Dissertation/HPRTU/projects/eLinuxPrj/Prj/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1/vivado.jou
+# Log file: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1/design_1_auto_pc_2.vds
+# Journal file: /media/lite/DATA/E_Dissertation/HPRTU_Remote/2-4_XADC_MultiChannels_Decimation_DMA/xadc_pynq/xadc_pynq.runs/design_1_auto_pc_2_synth_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_auto_pc_2.tcl -notrace
